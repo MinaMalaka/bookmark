@@ -1,0 +1,147 @@
+
+@font-face {
+    font-family: "Pacifico" ;
+    src: url('../Pacifico/Pacifico-Regular.ttf');
+}
+body {
+    background-image: linear-gradient(#c58838, #f7ecde, #eed9bd, #c58838);
+}
+::selection {
+    background-color: #fd7e14;
+}
+h1 {
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    margin-block: 50px;
+}
+h1::before {
+    content: "";
+    width: 100%;
+    height: 25%;
+    background-color: #fd7e14;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+    transition: all .5s
+}
+h1:hover::before {
+    height: 50%;
+}
+h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    font-weight: bolder;
+    background-image: linear-gradient(180deg, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+i {
+    background-image: linear-gradient(green,rgb(30, 255, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.form {
+    border-top: 2px dotted;
+    border-bottom: 2px dotted;
+    padding-bottom: 10px;
+    margin-block: 25px;
+}
+label {
+    font-weight: bolder;
+}
+input:focus {
+    border: 1px solid orange;
+    box-shadow: 0 0 5px orange;
+    outline: none;
+}
+.table {
+    border-collapse:separate;
+}
+.alert-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #0007;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.alert {
+    width: 500px;
+    background-image: linear-gradient(180deg, #3ca55c, #b5ac49);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: bolder;
+}
+span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+#regular {
+    padding: 10px 50px;
+    background-color: #d1512d;
+    color: white;
+    border-radius: 10px;
+    margin: 30px auto;
+    border: 0 solid;
+    transition: all .5s;
+}
+#regular:hover {
+    background-color: #aa381c;  
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.btn-1 {
+    background-color: #9eb23b;
+    padding: 10px 25px;
+    border-radius: 10px 5px;
+    border: none;
+    transition: all .5s;
+}
+.btn-1:hover {
+    background-color: #0b852d;
+}
+.btn-2 {
+    background-color: red;
+    padding: 10px 25px;
+    border-radius: 10px 5px;
+    border: none;
+    transition: all .5s;
+    color: white;
+}
+.btn-2:hover {
+    background-color: #831623;
+}
+.red {
+    border: 10px solid red;
+    margin-right: 5px;
+}
+.orange {
+    border: 10px solid orange;
+    margin-right: 5px;
+}
+.green{
+    border: 10px solid green;
+}
+#close {
+    border: 0 solid;
+    background-color: #352e28;
+    transition: all .5s;
+}
+#close:hover {
+    background-color: #831623;
+}
+.form-control:focus{
+    
+    box-shadow: 0 0 10px rgb(207, 149, 42);
+    border: 1px solid orange;
+}
